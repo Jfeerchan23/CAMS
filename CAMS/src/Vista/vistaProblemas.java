@@ -436,6 +436,7 @@ public class vistaProblemas extends javax.swing.JFrame {
         desactivarSgtComboBox();
         numFilaOrdenRPP++;
         btnMenos.setEnabled(false);
+        btnMas.setEnabled(false);
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     // tiene el mismo comportamiento que el Boton siguiente
