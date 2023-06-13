@@ -14,6 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 
 /**
  *
@@ -98,6 +99,20 @@ public class vistaPaseLista extends javax.swing.JFrame {
 
                 viewParticipantes.setMatrizParticipantes(matrizParticipantes);
                 viewParticipantes.jTableParticipantes.setModel(tabla);
+
+                TableColumn newColumn1 = viewParticipantes.jTableParticipantes.getColumnModel().getColumn(0);
+                newColumn1.setPreferredWidth(205);
+                newColumn1.setWidth(205);
+                TableColumn newColumn2 = viewParticipantes.jTableParticipantes.getColumnModel().getColumn(1);
+                newColumn2.setPreferredWidth(205);
+                newColumn2.setWidth(205);
+                TableColumn newColumn3 = viewParticipantes.jTableParticipantes.getColumnModel().getColumn(2);
+                newColumn3.setPreferredWidth(20);
+                newColumn3.setWidth(20);
+                TableColumn newColumn4 = viewParticipantes.jTableParticipantes.getColumnModel().getColumn(3);
+                newColumn4.setPreferredWidth(20);
+                newColumn4.setWidth(20);
+
                 viewParticipantes.agregarCheckBox(3, viewParticipantes.jTableParticipantes);
                 viewParticipantes.setVisible(true);
 
