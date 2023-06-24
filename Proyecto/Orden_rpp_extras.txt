@@ -1,5 +1,5 @@
-1,Álgebra,32,33,33,00:30
-2,Trigonometría y Geometría analítica,34,35,36,03:30
-3,Geometría plana,37,38,39,04:30
-4,Precálculo,40,41,42,03:30
-5,Probabilidad y Estadística,43,44,45,04:00
+1,Álgebra,32,33,33,00:05
+2,Trigonometría y Geometría analítica,34,35,36,00:05
+3,Geometría plana,37,38,39,00:05
+4,Precálculo,40,41,42,00:05
+5,Probabilidad y Estadística,43,44,45,00:05

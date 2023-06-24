@@ -132,10 +132,10 @@ public class vistaProblemasExtras extends javax.swing.JFrame {
     // funcion para colocar todos los valores necesarios para mostrar en pantalla
     public void colocarInformacion() {
         setNumProblema(matrizOrdenRppExtra[numFilaOrdenRPP][0]);
-        setNumPagPregunta(matrizOrdenRppExtra[numFilaOrdenRPP][1]);
-        setNumPagInicioSol(matrizOrdenRppExtra[numFilaOrdenRPP][2]);
-        setNumPagFinSol(matrizOrdenRppExtra[numFilaOrdenRPP][3]);
-        setTiempo(matrizOrdenRppExtra[numFilaOrdenRPP][4]);
+        setNumPagPregunta(matrizOrdenRppExtra[numFilaOrdenRPP][2]);
+        setNumPagInicioSol(matrizOrdenRppExtra[numFilaOrdenRPP][3]);
+        setNumPagFinSol(matrizOrdenRppExtra[numFilaOrdenRPP][4]);
+        setTiempo(matrizOrdenRppExtra[numFilaOrdenRPP][5]);
     }
 
     // funcion para mostrar valores en pantalla
@@ -441,7 +441,7 @@ public class vistaProblemasExtras extends javax.swing.JFrame {
             // deshabilitamos la barra de scroll vertical
             jScrollPanePDF.setVerticalScrollBarPolicy(jScrollPanePDF.VERTICAL_SCROLLBAR_NEVER);
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "No se pudo cargar el archivo PDF, favor de revisar la ruta.");
+            JOptionPane.showMessageDialog(this, ex);
         }
     }
 
