@@ -144,6 +144,20 @@ public class vistaPaseLista extends javax.swing.JFrame {
                 DefaultTableModel tablaSeleccionados = modelo.leerCSV(rutaArchivos + "\\SELECCIONADOS.csv");
 
                 viewSeleccionados.jTableSeleccionados.setModel(tablaSeleccionados);
+                
+                TableColumn newColumn5 =  viewSeleccionados.jTableSeleccionados.getColumnModel().getColumn(0);
+                newColumn5.setPreferredWidth(205);
+                newColumn5.setWidth(205);
+                TableColumn newColumn6 =  viewSeleccionados.jTableSeleccionados.getColumnModel().getColumn(1);
+                newColumn6.setPreferredWidth(205);
+                newColumn6.setWidth(205);
+                TableColumn newColumn7 =  viewSeleccionados.jTableSeleccionados.getColumnModel().getColumn(2);
+                newColumn7.setPreferredWidth(20);
+                newColumn7.setWidth(20);
+                TableColumn newColumn8 =  viewSeleccionados.jTableSeleccionados.getColumnModel().getColumn(3);
+                newColumn8.setPreferredWidth(20);
+                newColumn8.setWidth(20);
+                
                 viewSeleccionados.agregarCheckBox(3, viewSeleccionados.jTableSeleccionados);
                 viewSeleccionados.setVisible(true);
                 break;
