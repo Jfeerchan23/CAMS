@@ -84,12 +84,12 @@ public class vistaPaseLista extends javax.swing.JFrame {
         switch (opcion) {
             case "Pasar lista":
 
-                File ficheroParejas = new File(rutaArchivos + "\\PAREJAS.csv");
+                File ficheroParejas = new File(modelo.obtenerRutaGuardadoArchivos() + "\\PAREJAS.csv");
                 if (ficheroParejas.exists()) {
                     ficheroParejas.delete();
                 }
 
-                File ficheroImpParejas = new File(rutaArchivos + "\\IMPRESION_PAREJAS.csv");
+                File ficheroImpParejas = new File(modelo.obtenerRutaGuardadoArchivos() + "\\IMPRESION_PAREJAS.csv");
                 if (ficheroImpParejas.exists()) {
                     ficheroImpParejas.delete();
                 }
@@ -118,7 +118,7 @@ public class vistaPaseLista extends javax.swing.JFrame {
 
                 break;
             case "Problemas":
-                String rutaArchivos2 = rutaArchivos.replaceAll("\\\\", "/");
+                String rutaArchivos2 = modelo.obtenerRutaGuardadoArchivos().replaceAll("\\\\", "/");
                 File existeArchivo = new File(rutaArchivos2 + "/PAREJAS.csv");
                 if (existeArchivo.exists()) {
                     // Si existe vamos al visualizador
@@ -132,16 +132,16 @@ public class vistaPaseLista extends javax.swing.JFrame {
                 }
                 break;
             case "Problemas extras":
-                String matrizParejas[][] = modelo.leerArchivo(rutaArchivos + "\\PAREJAS.csv");
+                String matrizParejas[][] = modelo.leerArchivo(modelo.obtenerRutaGuardadoArchivos() + "\\PAREJAS.csv");
                 String matrizSeleccionados[][] = modelo.crearMatrizSeleccionados(matrizParejas);
-                File fichero = new File(rutaArchivos + "\\SELECCIONADOS.csv");
+                File fichero = new File(modelo.obtenerRutaGuardadoArchivos() + "\\SELECCIONADOS.csv");
                 //Si existe el archivo lo borra
                 if (fichero.exists()) {
                     fichero.delete();
                 }
                 // creamos el .csv de los estudiantes seleccionados
-                modelo.escribirEnFichero(matrizSeleccionados, rutaArchivos, "SELECCIONADOS", "csv");
-                DefaultTableModel tablaSeleccionados = modelo.leerCSV(rutaArchivos + "\\SELECCIONADOS.csv");
+                modelo.escribirEnFichero(matrizSeleccionados, modelo.obtenerRutaGuardadoArchivos(), "SELECCIONADOS", "csv");
+                DefaultTableModel tablaSeleccionados = modelo.leerCSV(modelo.obtenerRutaGuardadoArchivos() + "\\SELECCIONADOS.csv");
 
                 viewSeleccionados.jTableSeleccionados.setModel(tablaSeleccionados);
                 
@@ -168,7 +168,7 @@ public class vistaPaseLista extends javax.swing.JFrame {
     }//GEN-LAST:event_comboBoxArchivoActionPerformed
 
     public String[][] crearMatrizParejas() {
-        String[][] matrizPAREJAS = modelo.leerArchivo(modelo.obtenerRutaArchivos() + "\\PAREJAS.csv");
+        String[][] matrizPAREJAS = modelo.leerArchivo(modelo.obtenerRutaGuardadoArchivos()+ "\\PAREJAS.csv");
         String[][] matrizNombreParejas = new String[5][2];
         for (int i = 0; i < matrizNombreParejas.length; i++) {
             int k = 0;

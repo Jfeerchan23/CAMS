@@ -25,15 +25,22 @@ public class manipularCSV {
     private String rutaArchivoConfi = "C:\\CAMS\\Proyecto\\Archivo de configuracion.txt";        
     
     /* funcion que devuelve la ruta en donde están los archivos que consume el
-        programa y donde estarán los archivos de salida
+        programa
     */
     public String obtenerRutaArchivos(){        
         String matrizRuta [][] = leerArchivo(rutaArchivoConfi);
-        // se obtiene la ruta donde están los archivos con las calificaciones y donde se generarán los archivos de salida
+        // se obtiene la ruta donde están los archivos con las calificaciones
         String rutaArchivos = matrizRuta[0][1];
         return rutaArchivos;
     }
     
+    //Función que devuelve la ruta donde se guardarán los archivos de salida
+    public String obtenerRutaGuardadoArchivos(){
+        String matrizRuta [][] = leerArchivo(rutaArchivoConfi);
+        // se obtiene la ruta donde se generarán los archivos de salida
+        String rutaArchivos = matrizRuta[0][2];
+        return rutaArchivos;
+    }
     // funcion que devuelve el número de archivos (numero de reactivos)
     public int obtenerNumArchivos(){        
         String matrizRuta [][] = leerArchivo(rutaArchivoConfi);

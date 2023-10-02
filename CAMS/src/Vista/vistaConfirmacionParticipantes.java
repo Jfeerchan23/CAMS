@@ -144,9 +144,9 @@ public class vistaConfirmacionParticipantes extends javax.swing.JFrame {
         crearMatrizParejas();  
         crearMatrizImpresionParejas();
         // creamos el archivo PAREJAS.csv
-        modelo.escribirEnFichero(getMatrizParejas(), modelo.obtenerRutaArchivos(), "PAREJAS", "csv");   
+        modelo.escribirEnFichero(getMatrizParejas(), modelo.obtenerRutaGuardadoArchivos(), "PAREJAS", "csv");   
         // creamos el archivo IMPRESION_PAREJAS.csv
-        modelo.escribirEnFichero(getMatrizImpresionParejas(), modelo.obtenerRutaArchivos(), "IMPRESION_PAREJAS", "csv");   
+        modelo.escribirEnFichero(getMatrizImpresionParejas(), modelo.obtenerRutaGuardadoArchivos(), "IMPRESION_PAREJAS", "csv");   
         this.dispose();     
         viewParejas.setMatrizParejas(getMatrizParejas());  
         viewParejas.mostrarMatriz();

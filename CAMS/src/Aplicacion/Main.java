@@ -27,19 +27,19 @@ public class Main {
             ficheroNumProbExtras.delete();               
         }
         // IMPRESION_PAREJAS
-        File ficheroImpParejas = new File(rutaArchivos + "\\IMPRESION_PAREJAS.csv");
+        File ficheroImpParejas = new File(archivo.obtenerRutaGuardadoArchivos() + "\\IMPRESION_PAREJAS.csv");
         /*if (ficheroImpParejas.exists()) {            
             ficheroImpParejas.delete();               
         }
                 */
         // Log
-        File ficheroLog = new File(rutaArchivos + "\\Log.txt");
+        File ficheroLog = new File(archivo.obtenerRutaGuardadoArchivos() + "\\Log.txt");
         if (ficheroLog.exists()) {            
             ficheroLog.delete();               
         }
         
         // Parejas
-        File ficheroParejas = new File(rutaArchivos + "\\PAREJAS.csv");   
+        File ficheroParejas = new File(archivo.obtenerRutaGuardadoArchivos() + "\\PAREJAS.csv");   
         /*if (ficheroParejas.exists()) {            
             ficheroParejas.delete();               
         } */  
