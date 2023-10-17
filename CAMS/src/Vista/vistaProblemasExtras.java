@@ -173,9 +173,9 @@ public class vistaProblemasExtras extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 30)); // NOI18N
         jLabel4.setText("Desempate");
 
-        jLabelParticipante1.setFont(new java.awt.Font("Dialog", 1, 30)); // NOI18N
+        jLabelParticipante1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
 
-        jLabelParticipante2.setFont(new java.awt.Font("Dialog", 1, 30)); // NOI18N
+        jLabelParticipante2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabelParticipante2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
 
         btnIgual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/equal_32.png"))); // NOI18N

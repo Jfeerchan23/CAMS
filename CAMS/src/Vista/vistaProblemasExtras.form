@@ -123,7 +123,7 @@
     <Component class="javax.swing.JLabel" name="jLabelParticipante1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="30" style="1"/>
+          <Font name="Dialog" size="24" style="1"/>
         </Property>
       </Properties>
       <AuxValues>
@@ -133,7 +133,7 @@
     <Component class="javax.swing.JLabel" name="jLabelParticipante2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="30" style="1"/>
+          <Font name="Dialog" size="24" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
       </Properties>

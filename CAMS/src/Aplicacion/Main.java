@@ -28,10 +28,7 @@ public class Main {
         }
         // IMPRESION_PAREJAS
         File ficheroImpParejas = new File(archivo.obtenerRutaGuardadoArchivos() + "\\IMPRESION_PAREJAS.csv");
-       if (ficheroImpParejas.exists()) {            
-            ficheroImpParejas.delete();               
-        }
-               
+ 
         // Log
         File ficheroLog = new File(archivo.obtenerRutaGuardadoArchivos() + "\\Log.txt");
         if (ficheroLog.exists()) {            
@@ -40,9 +37,6 @@ public class Main {
         
         // Parejas
         File ficheroParejas = new File(archivo.obtenerRutaGuardadoArchivos() + "\\PAREJAS.csv");   
-        if (ficheroParejas.exists()) {            
-            ficheroParejas.delete();               
-        } 
         
         //////// INICIA FASE DE PASE DE LISTA ////////
         vistaPaseLista frmVistaPase = new vistaPaseLista();         
