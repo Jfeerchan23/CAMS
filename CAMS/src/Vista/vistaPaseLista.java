@@ -135,10 +135,7 @@ public class vistaPaseLista extends javax.swing.JFrame {
                 String matrizParejas[][] = modelo.leerArchivo(modelo.obtenerRutaGuardadoArchivos() + "\\PAREJAS.csv");
                 String matrizSeleccionados[][] = modelo.crearMatrizSeleccionados(matrizParejas);
                 File fichero = new File(modelo.obtenerRutaGuardadoArchivos() + "\\SELECCIONADOS.csv");
-                //Si existe el archivo lo borra
-                if (fichero.exists()) {
-                    fichero.delete();
-                }
+               
                 // creamos el .csv de los estudiantes seleccionados
                 modelo.escribirEnFichero(matrizSeleccionados, modelo.obtenerRutaGuardadoArchivos(), "SELECCIONADOS", "csv");
                 DefaultTableModel tablaSeleccionados = modelo.leerCSV(modelo.obtenerRutaGuardadoArchivos() + "\\SELECCIONADOS.csv");
